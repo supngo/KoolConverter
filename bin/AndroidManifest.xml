@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.naturecode.koolconverter"
+    android:versionCode="15"
+    android:versionName="3.5.5">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19"/>
+    
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="GlobalVariables" android:allowBackup="false">   
+        <activity
+            android:name=".MainCalc"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.naturecode.koolconverter.AutoLoanCalc"
+            android:label="@string/autoloan_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        
+		<activity
+		    android:name="com.naturecode.koolconverter.TipCalc"
+		    android:label="@string/tip_calc"
+		    android:screenOrientation="portrait"
+		    android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+		</activity>
+		
+		<activity
+		    android:name="com.naturecode.koolconverter.ShoppingDiscountCalc"
+		    android:label="@string/shopping_calc"
+		    android:screenOrientation="portrait"
+		    android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+		</activity>
+        
+		<activity
+		    android:name="com.naturecode.koolconverter.CurrencyCalc"
+		    android:label="@string/currency_calc"
+		    android:noHistory="true"
+		    android:screenOrientation="portrait"
+		    android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+		</activity>
+		
+		<activity
+		    android:name="com.naturecode.koolconverter.CurrencyType"
+		    android:label="@string/currency_prompt"
+		    android:noHistory="true"
+		    android:screenOrientation="portrait"
+		    android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+		    <intent-filter>
+		        <action android:name="android.intent.action.SEARCH" />
+		    </intent-filter>
+
+		    <meta-data
+		        android:name="android.app.searchable"
+		        android:resource="@xml/searchable" />
+		</activity>
+		
+		<activity
+		    android:name="com.naturecode.koolconverter.UnitList"
+		    android:label="@string/unit_prompt"
+		    android:screenOrientation="portrait"
+		    android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+		</activity>
+		
+		<activity
+		    android:name="com.naturecode.koolconverter.UnitGrid"
+		    android:label="@string/unit_prompt"
+		    android:screenOrientation="portrait"
+		    android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+		</activity>
+		
+		<activity
+            android:name="com.naturecode.koolconverter.AngleCalc"
+            android:label="@string/angle_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.AreaCalc"
+            android:label="@string/area_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.ByteCalc"
+            android:label="@string/byte_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.DensityCalc"
+            android:label="@string/density_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.ElectricCalc"
+            android:label="@string/electric_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.EnergyCalc"
+            android:label="@string/energy_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.ForceCalc"
+            android:label="@string/force_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.FuelCalc"
+            android:label="@string/fuel_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.LengthCalc"
+            android:label="@string/length_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.PowerCalc"
+            android:label="@string/power_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.PressureCalc"
+            android:label="@string/pressure_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.SpeedCalc"
+            android:label="@string/speed_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.TemperatureCalc"
+            android:label="@string/temp_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+		
+		<activity
+		    android:name="com.naturecode.koolconverter.VolumeCalc"
+		    android:label="@string/volume_calc"
+		    android:screenOrientation="portrait"
+		    android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+		</activity>		
+		<activity
+		    android:name="com.naturecode.koolconverter.WeightCalc"
+		    android:label="@string/weight_calc"
+		    android:screenOrientation="portrait"
+			android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+		</activity>
+		<activity
+            android:name="com.naturecode.koolconverter.MortgageCalc"
+            android:label="@string/mortgage_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.MortgageCalc_RemainingBalance"
+            android:label="@string/mortgage_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name="com.naturecode.koolconverter.MortgageCalc_MonthlyPayment"
+            android:label="@string/mortgage_calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        </activity>
+
+	</application>
+</manifest>

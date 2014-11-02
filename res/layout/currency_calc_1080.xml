@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/currency"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_2" >
+
+    <ImageView
+        android:id="@+id/currency_from_flag"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/currency_image"
+        android:src="@drawable/usd" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/currency_from_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/currency_from_flag"
+        android:layout_marginLeft="10dp"
+       	android:layout_alignBottom="@+id/currency_from_flag"
+        android:text="@string/currency_from_txt"
+        android:textColor="@color/green4"
+        android:textSize="25sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/currency_from"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/currency_from_flag"
+        android:layout_below="@+id/currency_from_txt"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/currency_select1"
+        android:background="@drawable/textfield1"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:selectAllOnFocus="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="28sp" >
+
+    </EditText>
+
+   	<Button
+        android:id="@+id/currency_select1"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignBottom="@+id/currency_from"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/select_button"
+        android:text="@string/currency_from"
+        android:textColor="@color/blue4"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+        
+    <Button
+        android:id="@+id/currency_switch"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:layout_alignLeft="@+id/currency_select1"
+        android:layout_alignRight="@+id/currency_select1"
+        android:layout_below="@+id/currency_select1"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/reset_button"
+        android:text="@string/currency_switch"
+        android:textColor="@color/orange4"
+        android:textSize="22sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <ImageView
+        android:id="@+id/currency_to_flag"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/currency_from_flag"
+        android:layout_below="@+id/currency_from"
+        android:layout_marginTop="106dp"
+        android:contentDescription="@string/currency_image"
+        android:src="@drawable/eur" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/currency_to_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/currency_to_flag"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/currency_to_flag"
+        android:text="@string/currency_to_txt"
+        android:textColor="@color/orange3"
+        android:textSize="25sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/currency_to"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/currency_to_flag"
+        android:layout_alignRight="@+id/currency_from"
+        android:layout_below="@+id/currency_to_txt"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textfield1"
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="28sp" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/currency_detail_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currency_from_flag"
+        android:layout_below="@+id/currency_sumbit"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/blue3"
+        android:textSize="25sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/currency_detail_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currency_from_flag"
+        android:layout_below="@+id/currency_detail_1"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/blue3"
+        android:textSize="25sp" 
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/currency_detail_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/currency_detail_2"
+        android:layout_marginLeft="20dp"
+      	android:layout_alignBottom="@+id/currency_detail_2"
+        android:text=""
+        android:textColor="@color/blue3"
+        android:textSize="25sp" 
+        android:textStyle="bold">
+    </TextView>
+    
+    <Button
+        android:id="@+id/currency_select2"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignBottom="@+id/currency_to"
+        android:layout_alignLeft="@+id/currency_select1"
+        android:layout_alignRight="@+id/currency_select1"       
+        android:background="@drawable/select_button"
+        android:text="@string/currency_to"
+        android:textColor="@color/blue4"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/currency_sumbit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/currency_to"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/submit_button"
+        android:text="@string/submit_button"
+        android:textColor="@color/green3"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+
+    
+
+</RelativeLayout>

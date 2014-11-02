@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_image">Icon for each application</string>
+    <string name="app_name">Kool Converter</string>
+    <string name="tip_calc">Tip Calculator</string>
+    <string name="autoloan_calc">Auto Loan Calculator</string>
+    <string name="shopping_calc">Shopping Discount</string>
+    <string name="currency_calc">Currency Converter</string>
+   	<string name="angle_calc">Angle</string>
+   	<string name="area_calc">Area</string>
+    <string name="byte_calc">Bit &amp; Byte</string>
+   	<string name="density_calc">Density</string>
+   	<string name="electric_calc">Electric</string>
+   	<string name="energy_calc">Energy</string>
+   	<string name="force_calc">Force</string>
+   	<string name="fuel_calc">Fuel Consumption</string>
+    <string name="length_calc">Length</string>
+    <string name="speed_calc">Speed</string>
+    <string name="power_calc">Power</string>
+    <string name="pressure_calc">Pressure</string>
+    <string name="temp_calc">Temperature</string>
+    <string name="volume_calc">Volume</string>
+    <string name="weight_calc">Weight</string>
+    <string name="mortgage_calc">Mortgage Calculation</string>
+    <string name="mortgage_1">Remaining Balance</string>
+    <string name="mortgage_2">Monthly Payment</string>
+    <string name="duration_prompt">Select duration type</string>
+    <string name="currency_prompt">Select currency</string>
+    <string name="unit_prompt">Select Unit Type</string>
+    <string name="submit_button">Submit</string>
+    <string name="reset_button">Reset</string>
+    <string name="convert_button">Convert</string>
+    <string name="dollar_sign">$</string>
+    <string name="arrow_down">&#8659;</string>
+    <string name="arrow_up">&#8657;</string>
+    <string name="search_hint">Search</string>
+    <string name="setting">Setting</string>
+    <string name="no_records">No Record Found!</string>
+    <string name="playlist">Playlist</string>
+    <string name="actionbar_activity_not_found">Failed to open intent</string>
+    
+    
+    <string name="tip_bill_amount">Bill amount</string>
+    <string name="tip_tip">Tip (%)</string>
+    <string name="tip_default_tip">15</string>
+    <string name="tip_tax_dollar">$</string>
+    <string name="tip_tax_percent">%</string>
+    <string name="tip_customer">1</string>
+    <string name="tip_split">Split by</string>
+    <string name="tip_tip_txt">Tip</string>
+    <string name="tip_total_txt">Total</string>
+    <string name="tip_person_txt">Per person</string>
+    
+    <string name="shopping_price">Original Price</string>
+    <string name="shopping_off">Off (%)</string>
+    <string name="shopping_tax">Tax (%)</string>
+    <string name="shopping_discount">15</string>
+    <string name="shopping_taxrate">5.0</string>
+    <string name="shopping_discount_txt">Discount</string>
+    <string name="shopping_sale_txt">Sale Price</string>
+    <string name="shopping_tax_txt">Tax</string>
+    <string name="shopping_price_txt">Total price</string>
+    
+    <string name="auto_amount">Loan amount</string>
+    <string name="auto_putdown_txt">Put down</string>
+    <string name="auto_putdown">0</string>
+    <string name="auto_trade_txt">Trade in</string>
+    <string name="auto_trade">0</string>
+    <string name="auto_rate_txt">Rate (%)</string>
+    <string name="auto_rate">5.0</string>
+    <string name="auto_tax_txt">Tax (%)</string>
+    <string name="auto_tax">0</string>
+    <string name="auto_duration_txt">Duration</string>
+    <string name="auto_duration">5</string>
+    <string name="auto_year">Year</string>
+    <string name="auto_month">Month</string>
+    <string name="auto_interest_txt">Interest pay</string>
+    <string name="auto_total_txt">Total pay</string>
+    <string name="auto_monthly_txt">Monthly pay</string>
+    
+    <string name="mortgage_amount">Amount</string>
+    <string name="mortgage_rate_txt">Rate (%)</string>
+    <string name="mortgage_rate">5.0</string>
+    <string name="mortgage_duration_txt1">Duration</string>
+    <string name="mortgage_duration_txt2">Years</string>
+    <string name="mortgage_duration">30</string>
+    <string name="mortgage_already_txt1">Already</string>
+    <string name="mortgage_already_txt2">paid</string>
+    <string name="mortgage_already">5</string>
+    <string name="mortgage_year">Year</string>
+    <string name="mortgage_month">Month</string>
+    <string name="mortgage_already_year">Year</string>
+    <string name="mortgage_already_month">Month</string>
+    <string name="mortgage_monthly_txt">Monthly pay</string>
+    <string name="mortgage_monthly"></string>
+    <string name="mortgage_remBal_txt1">Remaining</string>
+    <string name="mortgage_remBal_txt2">Balance</string>
+    <string name="mortgage_remBal">0</string>
+    <string name="mortgage_monpay_txt1">Monthly</string>
+    <string name="mortgage_monpay_txt2">payment</string>
+    <string name="mortgage_putdown_txt">Put down</string>
+    <string name="mortgage_monpay">0</string>
+    
+    <string name="currency_from_txt">U.S. Dollar</string>
+    <string name="currency_to_txt">Euro</string>
+    <string name="currency_from">USD</string>
+    <string name="currency_to">EUR</string>
+    <string name="currency_switch">&#8659; &#8657;</string>
+    <string name="currency_search">search&#8230;</string>
+    <string name="action_currency_search">search</string>
+    <string name="currency_image">Country Flag</string>
+    <string name="unit_image">Icons for units</string>
+     
+</resources>

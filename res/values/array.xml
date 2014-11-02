@@ -1,0 +1,457 @@
+<resources>
+	<string-array name="calculator_types">
+		<item>Car Loan Calculator</item>
+		<item>Currency Converter</item>
+		<item>Mortgage Calculator</item>
+		<item>Shopping Discount</item>
+		<item>Tip Calculator</item>
+		<item>Unit Converter</item>
+	</string-array>
+	
+	<string-array name="calculator_desc">
+		<item>Calculate Car loan</item>
+		<item>Convert Currency</item>
+		<item>Calculate Mortgage</item>
+		<item>Calculate Discounted price</item>
+		<item>Calculate Restaurant check</item>
+		<item>Convert Units</item>
+	</string-array>
+	
+	<string-array name="durations">
+		<item>Year</item>
+		<item>Month</item>
+	</string-array>
+	
+	<string-array name="tax_type">
+		<item>$</item>
+		<item>%</item>
+	</string-array>
+	
+	<string-array name="units">
+		<item>Angle</item>
+		<item>Area</item>
+		<item>Bit &amp; Byte</item>
+		<item>Density</item>
+		<item>Electric</item>
+		<item>Energy</item>
+		<item>Force</item>
+		<item>Fuel</item>
+		<item>Length</item>
+		<item>Power</item>
+		<item>Pressure</item>
+		<item>Speed</item>
+		<item>Temperature</item>
+		<item>Volume</item>
+		<item>Weight</item>
+	</string-array>
+	
+	<string-array name="unit_angle">
+		<item>arcminute</item>
+		<item>arcsecond</item>
+		<item>circle</item>
+		<item>degree</item>
+		<item>grad</item>
+		<item>octant</item>
+		<item>quadrant</item>
+		<item>radiant</item>
+		<item>sextant</item>
+		<item>sign</item>
+		<item>turn</item>
+	</string-array>
+	
+	<string-array name="unit_area">
+		<item>acre</item>
+		<item>are</item>
+		<item>hectare</item>
+		<item>square centimeter</item>
+		<item>square foot</item>
+		<item>square inch</item>
+		<item>square kilometer</item>
+		<item>square meter</item>
+		<item>square mile</item>
+		<item>square yard</item>
+	</string-array>
+	
+	<string-array name="unit_byte">
+		<item>bit</item>
+		<item>byte</item>
+		<item>kilobit (Kb)</item>
+		<item>kilobyte (KB)</item>
+		<item>megabit (Mb)</item>
+		<item>megabyte (MB)</item>
+		<item>gigabit (Gb)</item>
+		<item>gigabyte (GB)</item>
+		<item>terabit (Tb)</item>
+		<item>terabyte (TB)</item>
+	</string-array>
+	
+	<string-array name="unit_density">
+		<item>grain/gallon</item>
+		<item>gram/cubic centimeter</item>
+		<item>gram/liter</item>
+		<item>gram/milliliter</item>
+		<item>kilogram/cubic meter</item>
+		<item>kilogram/liter</item>
+		<item>milligram/milliliter</item>
+		<item>milligram/liter</item>
+		<item>ounce/cubic inch</item>
+		<item>ounce/gallon</item>
+		<item>pound/cubic inch</item>
+		<item>pound/cubic foot</item>
+		<item>pound/gallon</item>
+	</string-array>
+	
+	<string-array name="unit_electric">
+		<item>ampere</item>
+		<item>biot</item>
+		<item>coulomb/second</item>
+		<item>gilbert</item>
+		<item>kiloampere</item>
+		<item>milliampere</item>
+		<item>volt/ohm</item>
+		<item>watt/volt</item>
+	</string-array>
+	
+	<string-array name="unit_energy">
+		<item>Btu(th)</item>
+		<item>calorie(th)</item>
+		<item>calorie(food)</item>
+		<item>foot-pound force</item>
+		<item>horsepower hour</item>
+		<item>inch-pound force</item>
+		<item>joule</item>
+		<item>kilocalorie(th)</item>
+		<item>kilogram-force meter</item>
+		<item>kilojoule</item>
+		<item>kilowatt hour</item>
+		<item>newton meter</item>
+		<item>watt hour</item>
+	</string-array>
+
+	<string-array name="unit_force">
+		<item>kilogram force</item>
+		<item>kilonewton</item>
+		<item>kip</item>
+		<item>newton</item>
+		<item>pound force</item>
+		<item>poundal</item>
+		<item>tonnes force</item>
+		<item>ton force (US)</item>
+	</string-array>	
+	
+	<string-array name="unit_fuel">
+		<item>kilometer/liter</item>
+		<item>kilometer/cubic meter</item>
+		<item>meter/liter</item>
+		<item>meter/milliliter</item>
+		<item>mile/cubic foot</item>
+		<item>mile/gallon</item>
+		<item>mile/ounce</item>
+	</string-array>
+	
+	<string-array name="unit_length">
+		<item>centimeter</item>
+		<item>decimeter</item>
+		<item>fathom</item>
+		<item>foot</item>
+		<item>inch</item>
+		<item>kilometer</item>
+		<item>meter</item>
+		<item>mile</item>
+		<item>millimeter</item>
+		<item>league</item>
+		<item>yard</item>
+	</string-array>
+	
+	<string-array name="unit_power">
+		<item>Btu/hour</item>
+		<item>calorie(th)/hour</item>
+		<item>calorie(th)/second</item>
+		<item>foot pound-force/second</item>
+		<item>horse power (electric)</item>
+		<item>horse power (water)</item>
+		<item>horse power (metric)</item>
+		<item>joule/hour</item>
+		<item>joule/second</item>
+		<item>kilogram-force meter/hour</item>
+		<item>kilowatt</item>
+		<item>megawatt</item>
+		<item>watt</item>
+	</string-array>
+	
+	<string-array name="unit_pressure">
+		<item>bar</item>
+		<item>centimeter mercury</item>
+		<item>centimeter water</item>
+		<item>inch of mercury</item>
+		<item>inch of water</item>
+		<item>kilogram-force/square centimeter</item>
+		<item>kilogram-force/square meter</item>
+		<item>kilonewton/square meter</item>
+		<item>kilopascal</item>
+		<item>newton/square meter</item>
+		<item>pascal</item>
+		<item>pound-force/square foot</item>
+		<item>pound-force/square inch (psi)</item>
+		<item>ton-force/square foot (US)</item>
+		<item>ton-force/square inch (US)</item>
+	</string-array>
+	
+	<string-array name="unit_speed">
+		<item>centimeter/minute</item>
+		<item>centimeter/second</item>
+		<item>foot/hour</item>
+		<item>foot/minute</item>
+		<item>foot/second</item>
+		<item>inch/minute</item>
+		<item>inch/second</item>
+		<item>kilometer/hour</item>
+		<item>kilometer/minute</item>
+		<item>kilometer/second</item>
+		<item>knot</item>
+		<item>meter/hour</item>
+		<item>meter/minute</item>
+		<item>meter/second</item>
+		<item>mile/hour</item>
+		<item>mile/minute</item>
+		<item>mile/second</item>
+		<item>yard/hour</item>
+		<item>yard/minute</item>
+		<item>yard/second</item>
+	</string-array>
+	
+	<string-array name="unit_temperature">
+		<item>Celsius</item>
+		<item>Fahrenheit</item>
+		<item>Kelvin</item>
+	</string-array>
+	
+	<string-array name="unit_volume">
+		<item>barrel(oil)</item>
+		<item>bushel</item>
+		<item>cubic centimeter</item>
+		<item>cubic foot</item>
+		<item>cubic inch</item>
+		<item>cubic meter</item>
+		<item>cubic yard</item>
+		<item>ounce (US)</item>
+		<item>gallon (US)</item>
+		<item>liter</item>
+		<item>pint (US)</item>
+		<item>quart (US)</item>
+		<item>table spoon</item>
+		<item>tea spoon</item>
+	</string-array>
+	
+	<string-array name="unit_weight">
+		<item>carat</item>
+		<item>gram</item>
+		<item>kilogram</item>
+		<item>milligram</item>
+		<item>ounce</item>
+		<item>pound</item>
+		<item>stone</item>
+		<item>ton (US)</item>
+		<item>tonne (metric)</item>
+	</string-array>
+	
+	<string-array name="currency_codes">
+		<item>USD</item>
+		<item>EUR</item>
+		<item>GBP</item>
+		<item>AUD</item>
+		<item>CAD</item>
+		<item>CNY</item>
+		<item>HKD</item>
+		<item>INR</item>
+		<item>JPY</item>
+		<item>KRW</item>
+		<item>NZD</item>
+		<item>RUB</item>
+		<item>SGD</item>
+		<item>AFN</item>
+		<item>ALL</item>
+		<item>DZD</item>
+		<item>ARS</item>
+		<item>BSD</item>
+		<item>BHD</item>
+		<item>BDT</item>
+		<item>BOB</item>	
+		<item>BRL</item>
+		<item>BND</item>	
+		<item>KHR</item>
+		<item>CLP</item>
+		<item>COP</item>
+		<item>CRC</item>
+		<item>HRK</item>
+		<item>CUP</item>
+		<item>CZK</item>
+		<item>DKK</item>
+		<item>DOP</item>
+		<item>EGP</item>
+		<item>SVC</item>
+		<item>ETB</item>
+		<item>GEL</item>
+		<item>GTQ</item>
+		<item>GNF</item>
+		<item>HTG</item>
+		<item>HNL</item>
+		<item>HUF</item>
+		<item>ISK</item>
+		<item>IDR</item>
+		<item>IRR</item>
+		<item>IQD</item>
+		<item>ILS</item>
+		<item>JMD</item>
+		<item>JOD</item>
+		<item>KES</item>
+		<item>KWD</item>
+		<item>LAK</item>
+		<item>LVL</item>
+		<item>LBP</item>
+		<item>LTL</item>
+		<item>MOP</item>
+		<item>MKD</item>
+		<item>MWK</item>
+		<item>MYR</item>
+		<item>MXN</item>
+		<item>MNT</item>
+		<item>MAD</item>
+		<item>MZN</item>
+		<item>MMK</item>
+		<item>NAD</item>
+		<item>NPR</item>
+		<item>NIO</item>
+		<item>NGN</item>
+		<item>NOK</item>
+		<item>PKR</item>
+		<item>PAB</item>
+		<item>PYG</item>
+		<item>PEN</item>	
+		<item>PHP</item>
+		<item>PLN</item>
+		<item>QAR</item>
+		<item>RON</item>
+		<item>SAR</item>
+		<item>RSD</item>
+		<item>SKK</item>
+		<item>SIT</item>
+		<item>ZAR</item>
+		<item>LKR</item>
+		<item>SDD</item>
+		<item>SEK</item>
+		<item>CHF</item>
+		<item>SYP</item>	
+		<item>TWD</item>
+		<item>THB</item>
+		<item>TRL</item>
+		<item>UGX</item>
+		<item>UAH</item>
+		<item>UYU</item>
+		<item>VEB</item>
+		<item>VND</item>
+		<item>YER</item>
+		<item>ZMK</item>
+		<item>ZWD</item>		
+	</string-array>
+	
+	<string-array name="currency_desc">
+		<item>U.S. Dollar</item>
+		<item>Euro</item>
+		<item>British Pound</item>
+		<item>Australian Dollar</item>
+		<item>Canadian Dollar</item>
+		<item>Chinese Yuan</item>
+		<item>Hong Kong Dollar</item>
+		<item>Indian Rupee</item>
+		<item>Japanese Yen</item>
+		<item>Korean Won</item>
+		<item>New Zealand Dollar</item>
+		<item>Russian Rouble</item>
+		<item>Singaporean Dollar</item>			
+		<item>Afghanistan Afghani</item>
+		<item>Albanian Lek</item>
+		<item>Algerian Dinar</item>
+		<item>Argentine Peso</item>
+		<item>Bahamian Dollar</item>
+		<item>Bahraini Dinar</item>
+		<item>Bangladesh Taka</item>
+		<item>Bolivian Boliviano</item>		
+		<item>Brazilian Real</item>
+		<item>Brunei Dollar</item>	
+		<item>Cambodia Riel</item>
+		<item>Chilean Peso</item>
+		<item>Colombian Peso</item>
+		<item>Costa Rica Colon</item>
+		<item>Croatian Kuna</item>
+		<item>Cuban Peso</item>
+		<item>Czech Koruna</item>
+		<item>Danish Krone</item>
+		<item>Dominican Peso</item>
+		<item>Egyptian Pound</item>	
+		<item>El Salvadorian Colon</item>		
+		<item>Ethiopian Birr</item>
+		<item>Georgia Lari</item>
+		<item>Guatemala Quetzal</item>
+		<item>Guinea Franc</item>
+		<item>Haiti Gourde</item>
+		<item>Honduras Lempira</item>
+		<item>Hungarian Forint</item>
+		<item>Iceland Krona</item>	
+		<item>Indonesian Rupiah</item>
+		<item>Iran Rial</item>
+		<item>Iraqi Dinar</item>
+		<item>Israeli Shekel</item>
+		<item>Jamaican Dollar</item>
+		<item>Jordanian Dinar</item>
+		<item>Kenyan Shilling</item>
+		<item>Kuwaiti Dinar</item>
+		<item>Laos Kip</item>
+		<item>Latvian Lat</item>
+		<item>Lebanese Pound</item>
+		<item>Lithuanian Lita</item>
+		<item>Macau Pataca</item>
+		<item>Macedonian Denar</item>
+		<item>Malawi Kwacha</item>
+		<item>Malaysian Ringgit</item>
+		<item>Mexican Peso</item>
+		<item>Mongolian Tugrik</item>
+		<item>Moroccan Dirham</item>
+		<item>Mozambique Metical</item>
+		<item>Myanmar Kyat</item>
+		<item>Namibian Dollar</item>
+		<item>Nepalese Rupee</item>
+		<item>Nicaragua Cordoba</item>
+		<item>Nigerian Naira</item>
+		<item>Norwegian Krone</item>	
+		<item>Pakistani Rupee</item>
+		<item>Panamanian Balboa</item>
+		<item>Paraguayan Guarani</item>
+		<item>Peruvian Nuevo Sol</item>
+		<item>Philipino Peso</item>
+		<item>Polish Zloty</item>
+		<item>Qatar Rial</item>
+		<item>Romanian Leu</item>
+		<item>Saudi Arabian Riyal</item>
+		<item>Serbian Dinar</item>
+		<item>Slovak Koruna</item>
+		<item>Slovenian Tolar</item>
+		<item>South African Rand</item>
+		<item>Sri Lanka Rupee</item>
+		<item>Sudanese Dinar</item>
+		<item>Swedish Krona</item>
+		<item>Swiss Franc</item>
+		<item>Syrian Pound</item>		
+		<item>Taiwanese Dollar</item>
+		<item>Thai Baht</item>
+		<item>Turkish Lira</item>
+		<item>Ugandan Shilling</item>
+		<item>Ukrainian Hryvnia</item>
+		<item>Uruguayan New Peso</item>
+		<item>Venezuelan Bolivar</item>
+		<item>Vietnamese Dong</item>
+		<item>Yemen Riyal</item>
+		<item>Zambian Kwacha</item>
+		<item>Zimbabwe Dollar</item>
+	</string-array>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" 
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+    		
+		<ImageView android:id="@+id/currency_flag" android:layout_width="40dp" android:layout_height="40dp" 
+		    android:contentDescription="@string/currency_image" android:paddingTop="6dp" android:paddingLeft="1dp"/>
+			
+		<LinearLayout
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<TextView android:layout_width="fill_parent" android:id="@+id/currency_title"
+				android:layout_height="wrap_content" android:textStyle="bold" android:textColor="@color/white0"
+				android:paddingLeft="10dp" android:paddingTop="0dp" android:textSize="18sp"
+				android:text="@string/no_records" />
+				
+			<TextView android:layout_width="fill_parent" android:id="@+id/currency_detail" android:textStyle="bold"
+				android:layout_height="wrap_content" android:paddingLeft="10dp"
+				android:textColor="@color/blue3" android:textSize="15sp"/>
+		</LinearLayout>
+</LinearLayout>

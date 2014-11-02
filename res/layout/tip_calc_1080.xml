@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_2" >
+
+    <TextView
+        android:id="@+id/tip_bill_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tip_bill_amount"
+        android:textColor="@color/blue3"
+        android:textSize="23sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/dollar_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tip_bill_txt"
+        android:layout_marginLeft="10dp"
+       	android:layout_alignBottom="@+id/tip_bill_txt"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/blue3"
+        android:textSize="25sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/tip_bill"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/dollar_sign"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/tip_bill_txt"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/textfield1"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        android:selectAllOnFocus="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp" >
+    </EditText>
+    
+    <!--  
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tip_bill_txt"
+        android:layout_below="@+id/tip_bill_txt"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/style1"
+        android:text=""
+        android:textColor="@color/blue3"
+        android:textSize="23sp" />
+    --> 
+     <TextView
+        android:id="@+id/tax_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tip_bill_txt"
+		android:layout_below="@+id/tip_bill_txt"
+        android:layout_marginTop="20dp"
+        android:text="@string/shopping_tax_txt"
+        android:textColor="@color/blue3"
+        android:textSize="25sp" >
+    </TextView>
+    
+    <EditText
+        android:id="@+id/tip_tax"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tax_txt"
+        android:background="@drawable/textfield1"
+        android:layout_alignLeft="@+id/tip_bill"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        android:selectAllOnFocus="true"
+        android:text="@string/auto_putdown"
+        android:textColor="@color/black"
+        android:textSize="23sp" >
+    </EditText>
+    
+    <Spinner
+        android:id="@+id/tax_type"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_toRightOf="@+id/tip_tax"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/tip_tax"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/unit_prompt" >
+    </Spinner>
+
+    <!--
+  	<RadioGroup android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/tip_tax" android:id="@+id/tip_tax_type" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+    	android:layout_alignBottom="@+id/tip_tax" android:orientation="horizontal">    
+	<RadioButton
+	    android:id="@+id/tax_dollar"
+	    android:layout_width="75dp"
+	    android:layout_height="wrap_content"
+	    android:checked="true"
+	    android:text="@string/tip_tax_dollar"
+	    android:textColor="@color/blue3"
+	    android:textSize="23sp" />
+	
+	<RadioButton
+	    android:id="@+id/tax_percent"
+	    android:layout_width="75dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/tip_tax_percent"
+	    android:textColor="@color/blue3"
+	    android:textSize="23sp" />
+	</RadioGroup>
+	-->
+    <TextView
+        android:id="@+id/tip_tip_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tip_bill_txt"
+        android:layout_below="@+id/tax_txt"
+        android:layout_marginTop="20dp"
+        android:text="@string/tip_tip"
+        android:textColor="@color/blue3"
+        android:textSize="23sp" >
+    </TextView>
+
+    <Button
+        android:id="@+id/tip_dn"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/tip_tip"
+        android:layout_marginRight="10dp"
+		android:layout_alignBottom="@+id/tip_tip_txt"
+        android:background="@drawable/select_button"
+        android:text="@string/arrow_down"
+        android:textColor="@color/blue4"
+        android:textSize="25sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <EditText
+        android:id="@+id/tip_tip"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+		android:layout_alignLeft="@+id/tip_bill"
+        android:layout_alignBottom="@+id/tip_dn"
+        android:background="@drawable/textfield1"
+        android:inputType="number"
+        android:maxLength="3"
+        android:selectAllOnFocus="true"
+        android:state_enabled="false"
+        android:text="@string/tip_default_tip"
+        android:textColor="@color/black"
+        android:textSize="25sp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/tip_up"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+		android:layout_toRightOf="@+id/tip_tip"
+		android:layout_marginLeft="10dp"
+	   	android:layout_alignBottom="@+id/tip_tip"
+        android:background="@drawable/select_button"
+        android:text="@string/arrow_up"
+        android:textColor="@color/blue4"
+        android:textSize="25sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <TextView
+        android:id="@+id/tip_split_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tip_bill_txt"
+        android:layout_below="@+id/tip_tip_txt"
+        android:layout_marginTop="20dp"
+        android:text="@string/tip_split"
+        android:textColor="@color/blue3"
+        android:textSize="23sp" >
+    </TextView>
+
+    <Button
+        android:id="@+id/tip_split_dn"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+		android:layout_alignBottom="@+id/tip_split_txt"
+		android:layout_alignLeft="@+id/tip_dn"
+        android:background="@drawable/select_button"
+        android:text="@string/arrow_down"
+        android:textColor="@color/blue4"
+        android:textSize="25sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <EditText
+        android:id="@+id/tip_split"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/tip_tip"
+        android:layout_alignBottom="@+id/tip_split_dn"
+        android:background="@drawable/textfield1"
+        android:inputType="number"
+        android:maxLength="3"
+        android:selectAllOnFocus="true"
+        android:state_enabled="false"
+        android:text="@string/tip_customer"
+        android:textColor="@color/black"
+        android:textSize="25sp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/tip_slit_up"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/tip_up"
+        android:layout_alignBottom="@+id/tip_split_dn"
+        android:background="@drawable/select_button"
+        android:text="@string/arrow_up"
+        android:textColor="@color/blue4"
+        android:textSize="25sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <TextView
+        android:id="@+id/tip_tip_amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tip_bill_txt"
+        android:layout_below="@+id/tip_split_txt"
+        android:layout_marginTop="35dp"
+        android:text="@string/tip_tip_txt"
+        android:textColor="@color/green4"
+        android:textSize="23sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tip_tip_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dollar_sign"
+        android:layout_alignBottom="@+id/tip_tip_amt"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/green4"
+        android:textSize="23sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tip_tip_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tip_bill"
+        android:layout_alignBottom="@+id/tip_tip_amt"
+        android:text="@string/auto_putdown"
+        android:textColor="@color/green4"
+        android:textSize="25sp" >
+    </TextView>
+    <!-- 
+    <EditText
+        android:id="@+id/tip_tip_field"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/tip_bill"
+        android:layout_alignBottom="@+id/tip_tip_sign"
+        android:background="@drawable/textfield1"
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        android:maxLength="8"
+        android:selectAllOnFocus="true"
+        android:text="@string/auto_putdown"
+        android:textColor="@color/black"
+        android:textSize="25sp" >
+    </EditText>
+	 -->
+    <TextView
+        android:id="@+id/tip_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tip_bill_txt"
+        android:layout_below="@+id/tip_tip_amt"
+        android:layout_marginTop="15dp"
+        android:text="@string/tip_total_txt"
+        android:textColor="@color/green4"
+        android:textSize="23sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tip_total_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dollar_sign"
+        android:layout_alignBottom="@+id/tip_total"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/green4"
+        android:textSize="23sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tip_total_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tip_bill"
+        android:layout_alignBottom="@+id/tip_total"
+        android:text="@string/auto_putdown"
+        android:textColor="@color/green4"
+        android:textSize="25sp" >
+    </TextView>
+    <!--  
+    <EditText
+        android:id="@+id/tip_total_field"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/tip_bill"
+        android:layout_alignBottom="@+id/tip_total_sign"
+        android:background="@drawable/textfield1"
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        android:maxLength="8"
+        android:selectAllOnFocus="true"
+        android:text="@string/auto_putdown"
+        android:textColor="@color/black"
+        android:textSize="25sp" >
+    </EditText>
+	-->
+    <TextView
+        android:id="@+id/tip_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tip_bill_txt"
+        android:layout_below="@+id/tip_total"
+        android:layout_marginTop="15dp"
+        android:text="@string/tip_person_txt"
+        android:textColor="@color/orange3"
+        android:textSize="23sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tip_person_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/dollar_sign"
+        android:layout_alignBottom="@+id/tip_person"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/orange3"
+        android:textSize="23sp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/tip_person_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/tip_bill"
+        android:layout_alignBottom="@+id/tip_person"
+        android:text="@string/auto_putdown"
+        android:textColor="@color/orange3"
+        android:textSize="25sp" >
+    </TextView>
+	<!--
+    <EditText
+        android:id="@+id/tip_person_field"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/tip_bill"
+        android:layout_alignBottom="@+id/tip_person_sign"
+        android:background="@drawable/textfield1"
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        android:maxLength="8"
+        android:selectAllOnFocus="true"
+        android:text="@string/auto_putdown"
+        android:textColor="@color/black"
+        android:textSize="25sp" >
+    </EditText>
+	-->
+
+
+</RelativeLayout>

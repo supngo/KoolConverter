@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mortgage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_2" >
+
+    <TextView
+        android:id="@+id/mortgage_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/mortgage_amount"
+        android:textColor="@color/blue3"
+        android:textSize="22sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/mortgage_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_alignBottom="@+id/mortgage_txt"
+		android:layout_toRightOf="@+id/mortgage_txt"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/blue3"
+        android:textSize="22sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/mortgage_loan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/mortgage_sign"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/mortgage_txt"
+        android:background="@drawable/textfield1"
+        android:inputType="numberDecimal"
+        android:maxLength="12"
+        android:selectAllOnFocus="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="22sp" >
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/mortgage_rate_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mortgage_txt"
+        android:layout_below="@+id/mortgage_txt"
+        android:layout_marginTop="30dp"
+        android:text="@string/mortgage_rate_txt"
+        android:textColor="@color/blue3"
+        android:textSize="22sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/mortgage_rate"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/mortgage_loan"
+       	android:layout_alignBottom="@+id/mortgage_rate_txt"
+        android:background="@drawable/textfield1"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:selectAllOnFocus="true"
+        android:text="@string/mortgage_rate"
+        android:textColor="@color/black"
+        android:textSize="22sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/mortgage_duration_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mortgage_txt"
+        android:layout_below="@+id/mortgage_rate_txt"
+        android:layout_marginTop="30dp"
+        android:text="@string/mortgage_duration_txt1"
+        android:textColor="@color/blue3"
+        android:textSize="22sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/mortgage_duration"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/mortgage_loan"
+       	android:layout_alignBottom="@+id/mortgage_duration_txt1"
+        android:background="@drawable/textfield1"
+        android:inputType="number"
+        android:maxLength="2"
+        android:selectAllOnFocus="true"
+        android:text="@string/mortgage_duration"
+        android:textColor="@color/black"
+        android:textSize="22sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/mortgage_already_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mortgage_txt"
+        android:layout_below="@+id/mortgage_duration_txt1"
+        android:layout_marginTop="30dp"
+        android:text="@string/mortgage_already_txt1"
+        android:textColor="@color/blue3"
+        android:textSize="22sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/mortgage_already_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mortgage_already_txt1"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@+id/mortgage_already_txt1"
+        android:text="@string/mortgage_already_txt2"
+        android:textColor="@color/blue3"
+        android:textSize="22sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/mortgage_already"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/mortgage_loan"
+       	android:layout_alignBottom="@+id/mortgage_already_txt1"
+        android:background="@drawable/textfield1"
+        android:inputType="number"
+        android:maxLength="3"
+        android:selectAllOnFocus="true"
+        android:text="@string/mortgage_already"
+        android:textColor="@color/black"
+        android:textSize="22sp" >
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/mortgage_already_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/mortgage_already"
+        android:layout_alignTop="@+id/mortgage_already"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/mortgage_already_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/mortgage_already_year"
+            android:textColor="@color/blue3"
+            android:textSize="21sp" />
+
+        <RadioButton
+            android:id="@+id/mortgage_already_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mortgage_already_month"
+            android:textColor="@color/blue3"
+            android:textSize="21sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/mortgage_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/mortgage_already_type"
+        android:background="@drawable/submit_button"
+        android:text="@string/submit_button"
+        android:textColor="@color/green3"
+        android:textSize="22sp"
+        android:textStyle="bold" >
+    </Button>
+	
+    <TextView
+        android:id="@+id/mortgage_remBal_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_alignLeft="@+id/mortgage_txt"
+       	android:layout_below="@+id/mortgage_calc"
+        android:layout_marginTop="20dp"
+        android:text="@string/mortgage_remBal_txt2"
+        android:textColor="@color/green4"
+        android:textSize="22sp" >
+    </TextView>
+	<!--
+    <TextView
+        android:id="@+id/mortgage_remBal_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mortgage_txt"
+		android:layout_below="@+id/mortgage_remBal_txt1"
+        android:text="@string/mortgage_remBal_txt2"
+        android:textColor="@color/green4"
+        android:textSize="22sp" >
+    </TextView>
+	-->
+    <TextView
+        android:id="@+id/mortgage_remBal_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mortgage_sign"
+        android:layout_alignBottom="@+id/mortgage_remBal_txt1"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/green4"
+        android:textSize="22sp" >
+    </TextView>
+	
+    <TextView
+        android:id="@+id/mortgage_remBal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mortgage_loan"
+        android:layout_alignBottom="@+id/mortgage_remBal_sign"
+        android:text="@string/auto_putdown"
+        android:textColor="@color/green4"
+        android:textSize="24sp" >
+    </TextView>
+    
+    <!--
+    <EditText
+        android:id="@+id/mortgage_remBal"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/mortgage_loan"
+        android:layout_alignTop="@+id/mortgage_remBal_txt1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textfield1"
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        android:maxLength="9"
+        android:selectAllOnFocus="true"
+        android:text="@string/mortgage_remBal"
+        android:textColor="@color/black"
+        android:textSize="22sp" >
+    </EditText>
+	-->
+</RelativeLayout>

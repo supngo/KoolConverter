@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/unit"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_2" >
+
+    <EditText
+        android:id="@+id/unit_from"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/textfield1"
+        android:inputType="numberDecimal"
+        android:maxLength="15"
+        android:selectAllOnFocus="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="32sp" >
+    </EditText>
+
+    <Spinner
+        android:id="@+id/unit_spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignLeft="@+id/unit_from"
+		android:layout_alignRight="@+id/unit_from"
+		android:layout_below="@+id/unit_from"
+        android:layout_marginTop="10dp"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/unit_prompt" >
+    </Spinner>
+
+    <EditText
+        android:id="@+id/unit_to"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/unit_from"
+		android:layout_alignRight="@+id/unit_from"
+        android:layout_below="@+id/unit_spinner1"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/textfield1"
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        android:maxLength="26"
+        android:selectAllOnFocus="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="32sp" >
+    </EditText>
+
+    <Spinner
+        android:id="@+id/unit_spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignLeft="@+id/unit_to"
+		android:layout_alignRight="@+id/unit_to"
+		android:layout_below="@+id/unit_to"
+        android:layout_marginTop="10dp"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/unit_prompt" >
+    </Spinner>
+
+</RelativeLayout>
